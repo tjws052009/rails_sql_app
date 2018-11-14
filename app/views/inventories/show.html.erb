@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Serial number:</strong>
+  <%= @inventory.serial_number %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @inventory.name %>
+</p>
+
+<p>
+  <strong>Device type:</strong>
+  <%= @inventory.device_type %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @inventory.user %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @inventory.comment %>
+</p>
+
+<%= link_to 'Edit', edit_inventory_path(@inventory) %> |
+<%= link_to 'Back', inventories_path %>
