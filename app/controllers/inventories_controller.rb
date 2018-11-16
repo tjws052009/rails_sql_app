@@ -1,5 +1,6 @@
 class InventoriesController < ApplicationController
   before_action :set_inventory, only: [:show, :edit, :update, :destroy]
+  protect_from_forgery :except => [:create, :edit, :update, :destroy]
 
   # GET /inventories
   # GET /inventories.json
